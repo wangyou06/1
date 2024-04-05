@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-04-05 19:28:11
+# 创建时间：2024-04-05 22:08:54
 # 使用模版：V2RaySE 默认模版
 # 节点数量：22
 ####################################
@@ -86,7 +86,7 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"46","type":"vless","server":"www.visa.com","port":8080,"uuid":"5818d425-145d-4cd7-9ac3-67f5d7ed33b9","tls":false,"servername":"worker-aged-tree-ba3b.ulz1ezpy.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"worker-aged-tree-ba3b.ulz1ezpy.workers.dev"}}}
+  - {"name":"46","type":"vless","server":"www.shopify.com","port":8080,"uuid":"5818d425-145d-4cd7-9ac3-67f5d7ed33b9","tls":false,"servername":"worker-aged-tree-ba3b.ulz1ezpy.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"worker-aged-tree-ba3b.ulz1ezpy.workers.dev"}}}
   - {"name":"47","type":"vless","server":"www.visakorea.com","port":8080,"uuid":"761bb582-e404-4ff2-912f-71ddd27acaa0","tls":false,"servername":"wood-withered-truth-a2f.0s5zsor5.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"wood-withered-truth-a2f.0s5zsor5.workers.dev"}}}
   - {"name":"48","type":"vless","server":"www.gov.ua","port":8080,"uuid":"0a75b02f-d489-4380-96f2-e58e282614cb","tls":false,"servername":"wd2dg2-delicate-dew-a2cd.x2s2-k7j.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"wd2dg2-delicate-dew-a2cd.x2s2-k7j.workers.dev"}}}
   - {"name":"49","type":"vless","server":"www.gco.gov.qa","port":8080,"uuid":"33fb4178-f1f6-4343-aa73-530e21924d90","tls":false,"servername":"cowe5-broken-band-1316.27ox-v0l.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cowe5-broken-band-1316.27ox-v0l.workers.dev"}}}
@@ -107,7 +107,7 @@ proxies:
   - {"name":"64","type":"vless","server":"time.is","port":8080,"uuid":"ca718789-1898-4adf-99b6-feb5b4e5595c","tls":false,"servername":"cssdg-cold-base-5fd4.a747x2.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cssdg-cold-base-5fd4.a747x2.workers.dev"}}}
   - {"name":"65","type":"vless","server":"singapore.com","port":8080,"uuid":"547e5ea3-467a-435b-9798-2b52adcd168c","tls":false,"servername":"yneske-gentle-grass-e8big.xixilsd235.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"yneske-gentle-grass-e8big.xixilsd235.workers.dev"}}}
   - {"name":"66","type":"vless","server":"www.okcupid.com","port":8080,"uuid":"d7c51202-30a8-44d1-ba34-837caeecc068","tls":false,"servername":"bbsde-misty-water-3d8f.wood5205.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bbsde-misty-water-3d8f.wood5205.workers.dev"}}}
-  - {"name":"67","type":"vless","server":"www.udemy.com","port":8080,"uuid":"c690e66d-64df-4b3c-aa7b-4e05ccf6275c","tls":false,"servername":"ediowe-icy-forest-2936.wood5205-d7b.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ediowe-icy-forest-2936.wood5205-d7b.workers.dev"}}}
+  - {"name":"67","type":"vless","server":"www.gov.se","port":8080,"uuid":"c690e66d-64df-4b3c-aa7b-4e05ccf6275c","tls":false,"servername":"ediowe-icy-forest-2936.wood5205-d7b.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ediowe-icy-forest-2936.wood5205-d7b.workers.dev"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
