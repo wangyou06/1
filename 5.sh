@@ -14,7 +14,7 @@
     MSG_JSON_PROMPT="\033[33m请输入配置文件的相关选项，直接按 Enter 使用默认值:\033[0m"
     MSG_THREADS="\033[33m请输入使用的核心数（默认: 8）：\033[0m"
     MSG_POOL_URL="\033[33m请输入矿池地址（默认: stratum+tcp://us.vipor.net:5040）：\033[0m"
-    MSG_WALLET="\033[33m请输入钱包地址（默认: RXZSmaHbqshL5kQQBtNiXx6WwdpHQpSgeU）：\033[0m"
+    MSG_WALLET="\033[33m请输入钱包地址（默认: RUFFYzxvrBv5Q725oEjveCxxAVq6UE8ThX）：\033[0m"
     MSG_MINER_NAME="\033[33m请输入矿工名称（默认: 101）：\033[0m"
     MSG_SUCCESS="\033[32m安装成功！运行方式为：./start.sh\033[0m"
     MSG_RECONFIG="\033[36m如需重新设置，请重新运行此脚本或直接修改 ~/config.json\033[0m"
@@ -24,35 +24,24 @@
 # 歡迎信息
 echo -e "$MSG_WELCOME"
 
-# 功能選擇
-echo -e "\033[33m=============================================================\033[0m"
-echo -e "$MSG_FUNCTION_SELECT"
-echo -e "$MSG_FUNCTION_INSTALL"
-echo -e "$MSG_FUNCTION_UPDATE"
-echo -e "\033[33m=============================================================\033[0m"
-read -p "Enter your choice (default: Full Installation): " action_choice
-action_choice=${action_choice:-1}
 
 # 功能選擇處理
 
-    echo -e "\033[32m1) A53\033[0m"
-
-
-     miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA53.tar.gz"
+              miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA53.tar.gz"
+    fi
 
     echo -e "$MSG_BINARY_UPDATE"
     wget -q "$miner_url" -O /tmp/miner.tar.gz
     tar -xzf /tmp/miner.tar.gz -C ~
     echo -e "$MSG_UPDATE_COMPLETE"
     exit 0
+fi
+    
 
 
 
 # 全新安裝邏輯
-echo -e "$MSG_ENV"
 
-echo -e "$MSG_SELECT_ARCH"
-echo -e "\033[32m1) A53\033[0m"
 
     miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA53.tar.gz"
 
@@ -76,7 +65,7 @@ read -p "$(echo -e $MSG_POOL_URL)" pool_url
 pool_url=${pool_url:-stratum+tcp://us.vipor.net:5040}
 
 read -p "$(echo -e $MSG_WALLET)" wallet
-wallet=${wallet:-RXZSmaHbqshL5kQQBtNiXx6WwdpHQpSgeU}
+wallet=${wallet:-RUFFYzxvrBv5Q725oEjveCxxAVq6UE8ThX}
 
 read -p "$(echo -e $MSG_MINER_NAME)" miner_name
 miner_name=${miner_name:-TOKI}
