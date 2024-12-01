@@ -24,10 +24,27 @@
 # 歡迎信息
 echo -e "$MSG_WELCOME"
 
+# 功能選擇
+echo -e "\033[33m=============================================================\033[0m"
+echo -e "$MSG_FUNCTION_SELECT"
+echo -e "$MSG_FUNCTION_INSTALL"
+echo -e "$MSG_FUNCTION_UPDATE"
+echo -e "\033[33m=============================================================\033[0m"
+read -p "Enter your choice (default: Full Installation): " action_choice
+action_choice=${action_choice:-1}
 
 # 功能選擇處理
+if [[ "$action_choice" == "2" ]]; then
+    echo -e "$MSG_SELECT_ARCH"
+    echo -e "\033[32m1) A53\033[0m"
+    echo -e "\033[32m2) A55\033[0m"
+    read -p "Enter your choice (default: A53): " arch_choice
+    arch_choice=${arch_choice:-1}
 
-              miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA53.tar.gz"
+    if [[ "$arch_choice" == "2" ]]; then
+        miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA55.tar.gz"
+    else
+        miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA53.tar.gz"
     fi
 
     echo -e "$MSG_BINARY_UPDATE"
@@ -36,14 +53,22 @@ echo -e "$MSG_WELCOME"
     echo -e "$MSG_UPDATE_COMPLETE"
     exit 0
 fi
-    
-
 
 
 # 全新安裝邏輯
+echo -e "$MSG_ENV"
 
+echo -e "$MSG_SELECT_ARCH"
+echo -e "\033[32m1) A53\033[0m"
+echo -e "\033[32m2) A55\033[0m"
+read -p "Enter your choice (default: A53): " arch_choice
+arch_choice=${arch_choice:-1}
 
+if [[ "$arch_choice" == "2" ]]; then
+    miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA55.tar.gz"
+else
     miner_url="https://github.com/TokiZeng/TOKI-ccminerARM/releases/download/latest/ccminerA53.tar.gz"
+fi
 
 echo -e "$MSG_DEP_DOWNLOAD"
 wget -q "$miner_url" -O /tmp/miner.tar.gz
